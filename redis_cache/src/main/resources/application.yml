@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog_demo?characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    password: Qq@123456
+    cluster:
+      nodes: 47.101.33.159:7010,47.101.33.159:7011,47.101.33.159:7012,47.101.33.159:7013,47.101.33.159:7014,47.101.33.159:7015
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    top:
+      aday:
+        redis_cache:
+          mapper: debug
